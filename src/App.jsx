@@ -5,15 +5,22 @@ import './App.css'
 import Greeting from './Greeting'
 import Login from './Login'
 import Signup from './Signup'
+import Person from './Person'
+import Show from './Class'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
+      <div className='mainDiv'>
         <Login/>
         <Signup/>
+        <Person theName="Ade"></Person>
+        <Person theName="Wale"></Person>
+        <Person theName="Girl"></Person>
+        <Person theName="Tolu"></Person>
+        <Show/>
         {/* <Greeting/> */}
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
